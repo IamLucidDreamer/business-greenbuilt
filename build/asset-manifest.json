@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/static/css/main.ff40bc6a.css",
+    "main.js": "/static/js/main.6460e3fc.js",
+    "static/js/703.a059cc5a.chunk.js": "/static/js/703.a059cc5a.chunk.js",
+    "static/js/513.d482d56c.chunk.js": "/static/js/513.d482d56c.chunk.js",
+    "static/js/787.d729b48e.chunk.js": "/static/js/787.d729b48e.chunk.js",
+    "static/media/verificationBg.png": "/static/media/verificationBg.164672a590619f40558a.png",
+    "static/media/bp2.png": "/static/media/bp2.7919b4a2613ce74b18b2.png",
+    "static/media/signup2Bg.jpg": "/static/media/signup2Bg.94c4497c97cdba3c6c53.jpg",
+    "static/media/signupBg.jpg": "/static/media/signupBg.e551b6796b1c24e65641.jpg",
+    "static/media/mobile.png": "/static/media/mobile.4ae21a83f3081608b77e.png",
+    "static/media/signup3Bg.jpg": "/static/media/signup3Bg.93bdec8264e4cad739a6.jpg",
+    "static/media/loginBg.jpg": "/static/media/loginBg.b6b6650f9f354567df2a.jpg",
+    "static/media/heroBg.jpg": "/static/media/heroBg.0fb4f4ad0069c582a6bf.jpg",
+    "static/media/docsBg.jpg": "/static/media/docsBg.f54e12a4533fb98f3025.jpg",
+    "static/media/greenbuiltpurple.png": "/static/media/greenbuiltpurple.51564b0138320789343d.png",
+    "static/media/logoGreenbuilt.png": "/static/media/logoGreenbuilt.a7a45d8973397145c087.png",
+    "static/media/REWARD.png": "/static/media/REWARD.e88fd41a91299416b2fc.png",
+    "index.html": "/index.html",
+    "main.ff40bc6a.css.map": "/static/css/main.ff40bc6a.css.map",
+    "main.6460e3fc.js.map": "/static/js/main.6460e3fc.js.map",
+    "703.a059cc5a.chunk.js.map": "/static/js/703.a059cc5a.chunk.js.map",
+    "513.d482d56c.chunk.js.map": "/static/js/513.d482d56c.chunk.js.map",
+    "787.d729b48e.chunk.js.map": "/static/js/787.d729b48e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ff40bc6a.css",
+    "static/js/main.6460e3fc.js"
+  ]
+}

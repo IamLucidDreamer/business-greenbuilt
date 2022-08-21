@@ -1,0 +1,13 @@
+@media print {
+    body * {
+      visibility: hidden;
+    }
+    #divToPrint, #divToPrint * {
+      visibility: visible;
+    }
+    #divToPrint {
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+  }
