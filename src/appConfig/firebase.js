@@ -2,14 +2,14 @@ import { initializeApp } from 'firebase/app'
 import { getAuth } from 'firebase/auth'
 
 const firebaseConfig = {
-	apiKey: 'AIzaSyAPUS5x_xniGsaXBnuo6NmCIpYqGUBxFGM',
-	authDomain: 'green-built-auth.firebaseapp.com',
-	projectId: 'green-built-auth',
-	storageBucket: 'green-built-auth.appspot.com',
-	messagingSenderId: '21512135402',
-	appId: '1:21512135402:web:34376564f815807f88ad93',
-	measurementId: 'G-XCW34KNEK0',
-}
+  apiKey: "AIzaSyBmBhSlaocF59t2ol8Nv6ynIPpAt_iTGf4",
+  authDomain: "greenbuilt-test.firebaseapp.com",
+  projectId: "greenbuilt-test",
+  storageBucket: "greenbuilt-test.appspot.com",
+  messagingSenderId: "461874661137",
+  appId: "1:461874661137:web:f7b396c1c2518e617c2eb0",
+  measurementId: "G-NJVRSF8YHT"
+};
 
 const app = initializeApp(firebaseConfig)
 export const auth = getAuth(app)
