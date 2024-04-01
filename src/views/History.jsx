@@ -35,7 +35,7 @@ export default History;
 const GenerationHistory = () => {
   const navigate = useNavigate();
   const token = JSON.parse(localStorage.getItem("jwt"));
-  const user = useSelector((state) => state.user);
+  const user = useSelector((state) => state.user.user);
 
   // Declaring the States Required for the Working of the Component
   const [actions, setActions] = useReducer(
@@ -186,7 +186,7 @@ const GenerationHistory = () => {
 const ConsumptionHistory = () => {
   const navigate = useNavigate();
   const token = JSON.parse(localStorage.getItem("jwt"));
-  const user = useSelector((state) => state.user);
+  const user = useSelector((state) => state.user.user);
   // Declaring the States Required for the Working of the Component
   const [actions, setActions] = useReducer(
     (state, diff) => ({ ...state, ...diff }),

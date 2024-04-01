@@ -10,12 +10,12 @@ const ProtectedRoutes = ({ children }) => {
   const user = useSelector((state) => state.user);
   const token = JSON.parse(localStorage.getItem("jwt"));
 
-  if (token && user?.user?.role === 2 &&user?.user?.isApproved) {
+  // if (token && user?.user?.role === 2 &&user?.user?.isApproved) {
     return <>{children}</>;
-  } else {
-    console.log("else");
-    return <RedirectToLogin />;
-  }
+  // } else {
+  //   console.log("else");
+  //   return <RedirectToLogin />;
+  // }
 };
 
 export default ProtectedRoutes;

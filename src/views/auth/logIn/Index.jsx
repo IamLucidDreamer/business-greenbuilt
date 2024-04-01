@@ -10,7 +10,6 @@ import { Spin } from "antd";
 
 export const Login = () => {
   const user = useSelector((state) => state.user);
-  console.log(user , "User")
   const auth = useSelector((state) => state.user.auth);
   const dispatch = useDispatch();
   const navigate = useNavigate();

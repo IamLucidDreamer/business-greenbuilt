@@ -5,8 +5,8 @@ import axios from "../appConfig/httpHelper";
 import { toast } from "react-toastify";
 import { QrcodeOutlined } from "@ant-design/icons";
 import { innerTableActionBtnDesign } from "../components/styles/innerTableActions";
-// import { DrawerComp } from "./components/Drawer";
-// import { FilterDrawer } from "./components/FilterDrawer";
+import { DrawerComp } from "./generateQr/components/Drawer"
+import { FilterDrawer } from "./generateQr/components/FilterDrawer";
 
 const GenerateQr = () => {
   const token = JSON.parse(localStorage.getItem("jwt"));
@@ -206,22 +206,22 @@ const GenerateQr = () => {
       <div className="border-2 mt-5">
         <DataTable usersData={products} columns={columns} loading={loading} />
       </div>
-      {/* <DrawerComp
+      <DrawerComp
         title={"QR Code"}
         width={"75%"}
         visible={drawer}
         onCloseDrawer={onCloseDrawer}
         data={drawerValue}
-      ></DrawerComp> */}
+      ></DrawerComp>
       <div>
-        {/* <FilterDrawer
+        <FilterDrawer
           title={"Set Product Filters"}
           visible={filter}
           onCloseDrawer={onCloseFilterDrawer}
           data={filterValue}
           applyFilter={getFilteredProduct}
           resetFilter={requestsCaller}
-        /> */}
+        />
       </div>
     </div>
   );

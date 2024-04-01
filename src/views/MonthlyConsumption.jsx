@@ -11,7 +11,7 @@ import { AddNewMonthlyConsumption } from "./forms/AddNewMonthlyConsumption";
 
 const MonthlyConsumption = () => {
   const token = JSON.parse(localStorage.getItem("jwt"));
-  const user = useSelector((state) => state.user);
+  const user = useSelector((state) => state.user.user);
   const day = new Date();
 
   // Declaring the States Required for the Working of the Component

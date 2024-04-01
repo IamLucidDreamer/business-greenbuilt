@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Row, Col, Drawer, Tabs, TabPane, Image, Button } from "antd";
-import { Desc } from "../../components/layout/Desc";
 import { useSelector } from "react-redux";
 
 export const FilterDrawer = (props) => {

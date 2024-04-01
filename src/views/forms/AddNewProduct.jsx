@@ -8,7 +8,7 @@ import { ArrowLeftOutlined } from "@ant-design/icons";
 import { useSelector } from "react-redux";
 
 export function AddNewProduct(props) {
-  const user = useSelector((state) => state.user);
+  const user = useSelector((state) => state.user?.user);
   const uom = useSelector((state) => state.statics.uom);
   const packagingType = useSelector((state) => state.statics.packagingType);
 
@@ -19,7 +19,7 @@ export function AddNewProduct(props) {
       description: "",
       points: "",
       photo: "",
-      industryType: user.industryType,
+      industryType: user?.industryType,
       uom: "",
       packagingType: [],
     },

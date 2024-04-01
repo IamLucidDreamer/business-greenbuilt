@@ -16,7 +16,7 @@ import { Desc } from "../components/layout/Desc";
 const Products = () => {
   const token = JSON.parse(localStorage.getItem("jwt"));
   const [showAdd, setShowAdd] = useState(false);
-  const user = useSelector((state) => state.user);
+  const user = useSelector((state) => state.user.user);
   
   const { TabPane } = Tabs;
 

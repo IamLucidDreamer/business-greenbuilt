@@ -7,8 +7,7 @@ import axios from "../../appConfig/httpHelper";
 
 export const HeaderElement = ({ title }) => {
   const dispatch = useDispatch();
-  const user = useSelector((state) => state.user);
-
+  const user = useSelector((state) => state.user.user);
   const [showNotification, setShowNotification] = useState(false);
   const [notification, setNotification] = useState(true);
   const [notificationData, setNotificationData] = useState([]);
@@ -27,7 +26,7 @@ export const HeaderElement = ({ title }) => {
   const getNotifications = () => {
     const token = JSON.parse(localStorage.getItem("jwt"));
     axios
-      .get(`/notification/user/${user.id}?limit=10`, {
+      .get(`/notification/user/${user?.id}?limit=10`, {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -39,7 +38,7 @@ export const HeaderElement = ({ title }) => {
       .catch((err) => console.log(err));
   };
 
-  useEffect(() => getNotifications(), []);
+  useEffect(() => {if(user.id){getNotifications()}}, [user]);
 
   const Notification = () => (
     <Modal

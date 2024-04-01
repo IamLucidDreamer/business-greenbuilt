@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Row, Col, Drawer, Tabs, TabPane, Image } from "antd";
-import { Desc } from "../../components/layout/Desc";
 import QRCode from "react-qr-code";
 import { toast } from "react-toastify";
 import axios from "../../../appConfig/httpHelper";
@@ -14,7 +13,7 @@ import "./Drawer.css";
 export const DrawerComp = (props) => {
   const { TabPane } = Tabs;
 
-  const user = useSelector((state) => state.user);
+  const user = useSelector((state) => state?.user?.user);
 
   const [qrCode, setQrCode] = useState([]);
   const [show, setShow] = useState(false);
